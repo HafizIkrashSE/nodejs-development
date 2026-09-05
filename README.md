@@ -1,4 +1,4 @@
-# Basic Node.js HTTP Server
+# Node.js HTTP Server
 
 A simple HTTP server project built using the core `http` module of Node.js without using Express.js.
 
