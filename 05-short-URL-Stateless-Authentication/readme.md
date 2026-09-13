@@ -185,4 +185,5 @@ BS Computer Science — University of Education, Township Campus, Lahore
 
 GitHub: **[HafizIkrashSE](https://github.com/HafizIkrashSE)**
 
-**Project Status:** In Development
+**Project Status:** Completed
+
