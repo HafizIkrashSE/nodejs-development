@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+        <h1>Welcome Back</h1>
+        <p class="auth-subtitle">Login to your URL Shortener account</p>
+
+        <% if (locals.error) { %>
+        <div class="error-message">
+          <%= error %>
+        </div>
+        <% } %>
+
+        <form action="/user/login" method="post">
+          <label>Email</label>
+          <input
+            type="email"
+            required
+            name="email"
+            placeholder="Enter your email"
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            required
+            name="password"
+            placeholder="Enter your password"
+          />
+
+          <button type="submit" class="auth-button">Login</button>
+        </form>
+
+        <p class="auth-link">
+          Don't have an account?
+          <a href="/signup">Create an account</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
