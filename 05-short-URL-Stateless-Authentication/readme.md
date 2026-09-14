@@ -19,7 +19,7 @@ The project includes **JWT-based authentication** and **role-based authorization
 * MVC-based project structure
 * EJS templates for frontend views
 
-## 🛠️ Tech Stack
+#### 🛠️ Tech Stack
 
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB, Mongoose
