@@ -1,189 +1,236 @@
-# Node.js HTTP Server
+# Node.js Backend Development 🚀
 
-A simple HTTP server project built using the core `http` module of Node.js without using Express.js.
+A collection of my **Node.js backend development projects and practice work**, covering Node.js fundamentals, Express.js, REST APIs, authentication, file uploads, MongoDB, and related backend concepts.
 
-This project was created to understand the fundamentals of Node.js, HTTP requests and responses, routing, file system operations, modules, and npm scripts.
+This repository is continuously updated as I learn and build more projects.
 
-####  Features
+---
 
-* Basic HTTP server using Node.js `http` module
-* Handles different routes
-* Sends HTTP responses
-* Uses appropriate HTTP status codes
-* Uses the `fs` module for file operations
-* Demonstrates CommonJS modules
-* Demonstrates basic Node.js event-driven architecture
-* Uses npm and `package.json` scripts
-* Built without Express.js
+## 📂 Projects
 
-## Technologies Used
+### 01 — HTTP Server
+Basic HTTP server built using Node.js core `http` module.
 
-* Node.js
-* JavaScript
-* Node.js `http` module
-* Node.js `fs` module
-* npm
+**Topics Covered:**
+- Node.js HTTP module
+- Creating a server
+- Request and response handling
+- Routing
+- Query parameters
+- File System (`fs`)
+- URL handling
+- Logging requests
 
-## Project Structure
+---
+
+### 02 — Express.js Server
+Introduction to building servers and APIs with Express.js.
+
+**Topics Covered:**
+- Express.js
+- Routes
+- Request and response
+- Middleware
+- Query parameters
+- Route handling
+- Nodemon
+
+---
+
+### 03 — REST API Project
+A REST API project built with Express.js.
+
+**Topics Covered:**
+- REST API
+- HTTP methods
+- GET, POST, PATCH, DELETE
+- API routes
+- Middleware
+- JSON data
+- Postman API testing
+- CRUD operations
+
+---
+
+### 04 — Short URL — Stateful Authentication
+A URL shortener application with stateful authentication.
+
+**Topics Covered:**
+- URL shortening
+- Express.js
+- MongoDB
+- Mongoose
+- MVC architecture
+- EJS
+- Cookies
+- Cookie-based authentication
+- Middleware
+- Controllers
+- Routes
+- Models
+
+---
+
+### 05 — Short URL — Stateless Authentication
+A URL shortener application using stateless authentication.
+
+**Topics Covered:**
+- URL shortening
+- REST APIs
+- JWT authentication
+- Register and Login
+- Authentication middleware
+- Protected routes
+- MongoDB
+- Mongoose
+- MVC architecture
+
+---
+
+### 06 — Image Upload
+Backend project for uploading images using Node.js and Express.js.
+
+**Topics Covered:**
+- File uploads
+- Multer
+- Express.js
+- Multipart/form-data
+- File handling
+- Upload middleware
+
+---
+
+## 🛠️ Technologies
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JavaScript
+- EJS
+- JWT
+- Multer
+- REST APIs
+- Postman
+- Git & GitHub
+
+---
+
+## 📚 What I'm Learning
+
+This repository documents my journey in backend development.
+
+### Node.js
+- HTTP servers
+- File System
+- URL module
+- Modules
+- NPM
+- Asynchronous programming
+
+### Express.js
+- Routing
+- Middleware
+- REST APIs
+- Error handling
+- MVC architecture
+
+### MongoDB & Mongoose
+- Database connection
+- Schemas
+- Models
+- CRUD operations
+- MongoDB queries
+
+### Authentication
+- Stateful authentication
+- Stateless authentication
+- Cookies
+- JWT
+- Protected routes
+- Authentication middleware
+
+### Backend Development
+- REST API development
+- API testing with Postman
+- File uploads
+- Project structure
+- Error handling
+
+---
+
+## 📁 Repository Structure
 
 ```text
-node-http-server/
+Node.js/
 │
-├── index.js
-├── package.json
-├── package-lock.json
+├── 01-http-server/
+├── 02-express.js-server/
+├── 03-Rest-API-Project/
+├── 04-short-url-Statefull-Authentication/
+├── 05-short-URL-Stateless-Authentication/
+├── 06-ImageUpload/
+│
+├── .gitignore
+├── LICENSE
 └── README.md
-```
+````
 
-## Installation
+---
+
+## 🚀 How to Run a Project
 
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/HafizIkrashSE/Node.js.git
 ```
 
-Navigate to the project folder:
+Go into the repository:
 
 ```bash
-cd node-http-server
+cd Node.js
 ```
 
-Install dependencies:
+Then move into the required project:
+
+```bash
+cd 01-http-server
+```
+
+Install dependencies if the project has a `package.json`:
 
 ```bash
 npm install
 ```
 
-## Run the Server
-
-Start the server using:
+Run the project:
 
 ```bash
 npm start
 ```
 
-Or run directly with Node.js:
+> Each project may have different dependencies and setup requirements. Check the project files for specific instructions.
 
-```bash
-node index.js
-```
+---
 
-The server will run on the port defined in the project, for example:
+## 🎯 Goal
 
-```text
-http://localhost:8000
-```
+My goal is to build a strong foundation in **backend development with Node.js**, followed by developing full-stack applications using the **MERN stack**.
 
-## Example HTTP Server
+I will continue adding new projects and concepts to this repository as I progress.
 
-```javascript
-const http = require("http");
+---
 
-const server = http.createServer((req, res) => {
-  res.end("Hello from Node.js HTTP Server");
-});
+## 👨‍💻 Author
 
-server.listen(8000, () => {
-  console.log("Server started on port 8000");
-});
-```
+**Hafiz Ikrash Riaz**
 
-## Node.js Event Loop
+Computer Science Student | Backend & Full-Stack Development
 
-The Node.js event loop allows Node.js to perform non-blocking and asynchronous operations.
+GitHub: [HafizIkrashSE](https://github.com/HafizIkrashSE)
 
-Instead of waiting for one task to finish before starting another, Node.js can handle other operations while tasks such as file reading, database operations, or network requests are being completed.
+---
 
-This makes Node.js efficient for applications that handle many requests.
+⭐ This repository is continuously updated as I learn, practice, and build more Node.js projects.
 
-## File System Module
-
-The Node.js `fs` module is used to interact with files.
-
-Example:
-
-```javascript
-const fs = require("fs");
-
-fs.writeFileSync("example.txt", "Hello from Node.js");
-
-const data = fs.readFileSync("example.txt", "utf-8");
-
-console.log(data);
-```
-
-It can be used to:
-
-* Read files
-* Write files
-* Append data
-* Delete files
-* Rename files
-
-## CommonJS Modules
-
-Node.js supports CommonJS modules using:
-
-```javascript
-require()
-```
-
-to import modules and:
-
-```javascript
-module.exports
-```
-
-to export functionality from one file to another.
-
-Example:
-
-```javascript
-const fs = require("fs");
-```
-
-## npm and package.json
-
-npm is the package manager used with Node.js.
-
-The `package.json` file contains information about the project, dependencies, and scripts.
-
-Example:
-
-```json
-{
-  "scripts": {
-    "start": "node index.js"
-  }
-}
-```
-
-The server can then be started using:
-
-```bash
-npm start
-```
-
-## Learning Outcomes
-
-Through this project, I learned:
-
-* Node.js fundamentals
-* How the Node.js event loop works
-* How to create a server using the `http` module
-* How HTTP requests and responses work
-* Basic routing
-* Using the `fs` module for file operations
-* CommonJS modules
-* npm and package management
-* `package.json` scripts
-* The fundamentals behind web servers before using Express.js
-
-## Purpose
-
-The purpose of this project is to build a strong understanding of Node.js core concepts before moving to frameworks such as Express.js and building more advanced REST APIs.
-
-## Author
-
-**Hafiz Ikrash**
