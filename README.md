@@ -4,8 +4,6 @@ A collection of my **Node.js backend development projects and practice work**, c
 
 This repository is continuously updated as I learn and build more projects.
 
----
-
 ## 📂 Projects
 
 ### 01 — HTTP Server
